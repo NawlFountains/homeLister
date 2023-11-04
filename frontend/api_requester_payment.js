@@ -3,7 +3,7 @@ const ip = window.location.hostname;
 function showAllPayments() {
     const itemsElement = document.querySelector('#payments');
 
-    fetch(`http://${ip}/getAllPayments`)
+    fetch(`http://${ip}:8080/getAllPayments`)
     .then(response => {
         if (!response.ok) {
         throw new Error('Network response was not ok');
