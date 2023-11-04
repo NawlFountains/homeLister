@@ -1,7 +1,9 @@
+// ASume front end and backend running on same ip
+const ip = window.location.hostname;
 function showAllItems() {
     const itemsElement = document.querySelector('#items');
 
-    fetch(`http://localhost:8080/getAllItems`)
+    fetch(`http://${ip}:8080/getAllItems`)
     .then(response => {
         if (!response.ok) {
         throw new Error('Network response was not ok');
@@ -38,7 +40,7 @@ function showAllItems() {
 function deleteItem(row) {
     const name = document.getElementById('items').rows[row+1].cells[0].textContent;
 
-    const apiUrl = `http://localhost:8080/deleteItem?name=${name}`;
+    const apiUrl = `http://${ip}:8080/deleteItem?name=${name}`;
     fetch(apiUrl)
     .then(response => {
         if (!response.ok) {
@@ -63,7 +65,7 @@ function registerItem() {
     const name = document.getElementById('name').value;
     const quantity = parseInt(document.getElementById('quantity').value);
     
-    const apiUrl = `http://localhost:8080/registerItem?name=${name}&quantity=${quantity}`;
+    const apiUrl = `http://${ip}:8080/registerItem?name=${name}&quantity=${quantity}`;
 
     
     fetch(apiUrl)
