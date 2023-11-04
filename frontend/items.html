@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Items</title>
+</head>
+<body>
+    <h1 style=font-family:arial;">Items</h1>
+
+
+    <div>
+        <label for="name">Nombre : </label>
+        <input type="name" id="name" name="name">
+    </div>
+
+
+    <div>
+        <label for="quantity">Cantidad : </label>
+        <input type="quantity" id="quantity" name="quantity">
+    </div>
+
+    <button type="button1" onclick="registerItem()">Register Item</button>
+    <button type="button1" onclick="showAllItems()">Show all items</button>
+    <table id="items"></table>
+
+    <script src="api_requester_item.js"></script>
+</body>
+</html>

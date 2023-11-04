@@ -1,0 +1,44 @@
+body{
+  display: flex; /* Use flexbox to center the <ul> */
+  justify-content: center; /* Center content horizontally */
+    align-items: center;
+    background-color: black;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 15vw;
+    font-family:monospace;
+}
+a {
+    display: block; /* Set the display property to block */
+    color:bisque;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+a.items {
+    color: black;
+    background-color: #ECE3CE;
+}
+a.payments {
+    background-color: #739072;
+}
+a.incomes {
+    background-color: #3A4D39;
+}
+
+li {
+margin: 0;
+padding: 0;
+width: 100vw;
+}
+
+/* Set the <ul> to 100% of the viewport width */
+ul {
+width: 100vw;
+white-space: nowrap; /* Prevent line breaks */
+}

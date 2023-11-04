@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payments</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h1 style=font-family:arial;>Payments</h1>
+
+
+<form>
+    <label for="motive">Motivo : </label>
+    <input type="motive" id="motive" name="motive">
+</form>
+
+
+<form>
+    <label for="quantity">Costo : </label>
+    <input type="quantity" id="quantity" name="quantity">
+</form>
+
+<button type="button1" onclick="registerPayment()">Register Payment</button>
+<button type="button1" onclick="showAllPayments()">Show all payments</button>
+<table id="payments"></table>
+
+<script src="api_requester_payment.js"></script>
+</body>
+</html>

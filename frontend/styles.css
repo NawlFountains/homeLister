@@ -1,0 +1,87 @@
+body{
+  display: block; /* Use flexbox to center the <ul> */
+  justify-content:center; /* Center content horizontally */
+    align-items: center;
+    text-align: center;
+    font-size: 6vw;
+    font-family: monospace;
+    background-color: #041A00;
+    color: antiquewhite;
+    font-weight: bold;
+}
+input {
+    width: 65%;
+    text-align: center;
+    height: 100%;
+    font-size: 6vw;
+    background-color: #3A4D39;
+    color: antiquewhite;
+    border-radius: 10px;
+}
+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+h1 {
+    display: flex;
+    justify-content:center;
+    margin: 0; 
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 2vw;
+    width: 100vw;
+}
+
+button[type="button1"] {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 2vw auto;
+    width: 100vw;
+    color: antiquewhite;
+    background-color: #4F6F52;
+}
+button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 1vw auto;
+    font-size: 6vw;
+    font-weight: bold;
+    font-family: monospace;
+    border-radius: 10px;
+}
+a {
+    display: block; /* Set the display property to block */
+    color:bisque;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+td {
+margin: 0;
+padding: 0;
+width: 100vw;
+}
+
+#incomes, #payments {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-size: 4vw;
+}
+
+/* Set the <ul> to 100% of the viewport width */
+tr {
+width: 100vw;
+white-space: nowrap; /* Prevent line breaks */
+}
+table {
+    background-color: #739072;
+}
